@@ -20,5 +20,9 @@ A high-performance financial dashboard built to process raw bank statements and 
 
 ```bash
 cd backend
+# Activate the virtual environment:
+uvicorn main:app --reloadS:
 source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
 python main.py
