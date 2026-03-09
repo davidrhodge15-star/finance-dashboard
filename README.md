@@ -9,6 +9,8 @@ A high-performance financial dashboard built to process raw bank statements and 
 * **Export:** jsPDF / jspdf-autotable
 
 ## 🌟 Key Features
+## 📊 System Overview
+<img width="100%" alt="Sentinel Diagnostics Demo" src="https://github.com/user-attachments/assets/9fff7dc7-7723-4616-b3f5-744078ee992b" />
 * **CSV Processing Engine:** Custom Python backend using Pandas to sanitize and categorize transaction data.
 * **Dynamic Analytics:** Real-time bar chart visualization of spending distribution.
 * **Dynamic UI:** Responsive dashboard with conditional formatting (color-coded balance tracking).
@@ -20,9 +22,10 @@ A high-performance financial dashboard built to process raw bank statements and 
 ```bash
 cd backend
 source venv/bin/activate
-python main.py```
-
+python main.py
+```
 ### 2. Start the Frontend
 ```bash
 cd frontend
-npm run dev```
+npm run dev
+```
