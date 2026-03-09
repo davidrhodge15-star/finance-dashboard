@@ -10,11 +10,15 @@ A high-performance financial dashboard built to process raw bank statements and 
 
 ## 🌟 Key Features
 ## 📊 System Overview
-<img width="100%" alt="Sentinel Diagnostics Demo" src="https://github.com/user-attachments/assets/9fff7dc7-7723-4616-b3f5-744078ee992b" />
 * **CSV Processing Engine:** Custom Python backend using Pandas to sanitize and categorize transaction data.
 * **Dynamic Analytics:** Real-time bar chart visualization of spending distribution.
 * **Dynamic UI:** Responsive dashboard with conditional formatting (color-coded balance tracking).
 * **Professional Export:** Generates formatted PDF statements directly from the browser.
+* 
+## 📊 Live Preview
+<img width="100%" alt="Finance Dashboard Demo" src="https://github.com/user-attachments/assets/9fff7dc7-7723-4616-b3f5-744078ee992b" />
+
+*Note: This dashboard provides a categorized breakdown of monthly spending vs. income.*
 
 ## 🚀 How to Run
 
