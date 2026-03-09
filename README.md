@@ -17,6 +17,7 @@ A high-performance financial dashboard built to process raw bank statements and 
 ## 🚀 How to Run
 
 ### 1. Start the Backend
+
 ```bash
 cd backend
 source venv/bin/activate
