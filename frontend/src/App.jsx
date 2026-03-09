@@ -44,10 +44,10 @@ function App() {
   const generatePDF = () => {
     const doc = new jsPDF();
     
-    // PDF Header
+    // PDF Header - RESTORED
     doc.setFontSize(22);
     doc.setTextColor(16, 185, 129); 
-    doc.text("Finance Sentinel: Expense Analytics", 20, 20);
+    doc.text("Personal Finance: Expense Analytics", 20, 20);
     
     // Report Metadata
     doc.setFontSize(12);
@@ -70,20 +70,19 @@ function App() {
     doc.save(`Finance_Report_${new Date().toISOString().split('T')[0]}.pdf`);
   };
 
-  // UI Helper: Determine color based on balance
   const balanceColor = balance >= 0 ? "text-emerald-400" : "text-rose-400";
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-8 font-sans">
       <div className="max-w-6xl mx-auto">
         
-        {/* Header Section */}
+        {/* Header Section - RESTORED */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
           <div>
             <h1 className="text-3xl font-bold tracking-tight flex items-center gap-2">
-              <TrendingUp className="text-emerald-400" /> Finance Sentinel
+              <TrendingUp className="text-emerald-400" /> Personal Finance Dashboard
             </h1>
-            <p className="text-slate-400 mt-1">Full-Stack Financial Diagnostics Pipeline</p>
+            <p className="text-slate-400 mt-1">Track, Analyze, and Export Your Spending</p>
           </div>
           
           <div className="flex items-center gap-4">
@@ -106,7 +105,7 @@ function App() {
         {/* Dashboard Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
-          {/* Upload Card */}
+          {/* Upload Card - RESTORED */}
           <div 
             onClick={() => fileInputRef.current.click()}
             className={`bg-slate-900 border-2 border-dashed rounded-3xl p-12 flex flex-col items-center justify-center transition-all cursor-pointer group ${uploading ? 'border-emerald-500 animate-pulse' : 'border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900/50'}`}
@@ -115,17 +114,16 @@ function App() {
             <div className="bg-slate-800 p-5 rounded-2xl mb-4 group-hover:scale-110 transition-transform shadow-inner">
               {uploading ? <CheckCircle className="w-10 h-10 text-emerald-400" /> : <Upload className="w-10 h-10 text-emerald-400" />}
             </div>
-            <h3 className="text-xl font-semibold mb-2">{uploading ? 'Processing Data...' : 'Import Bank Statement'}</h3>
-            <p className="text-slate-500 text-center text-sm max-w-xs">Drop your .csv file here to trigger the Python analysis engine.</p>
+            <h3 className="text-xl font-semibold mb-2">{uploading ? 'Processing Statement...' : 'Import Bank Statement'}</h3>
+            <p className="text-slate-500 text-center text-sm max-w-xs">Upload your monthly bank export to visualize your spending habits.</p>
           </div>
 
-          {/* Visualization Card */}
+          {/* Visualization Card - RESTORED */}
           <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 h-96 shadow-2xl relative overflow-hidden">
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <PieChart className="w-5 h-5 text-emerald-400" /> Spending Distribution
+                <PieChart className="w-5 h-5 text-emerald-400" /> Monthly Spending Breakdown
               </h3>
-              <span className="text-xs font-mono text-slate-500 uppercase tracking-widest">Live Diagnostics</span>
             </div>
             
             <div className="h-64 w-full">
