@@ -20,4 +20,9 @@ A high-performance financial dashboard built to process raw bank statements and 
 ```bash
 cd backend
 source venv/bin/activate
-python main.py
+python main.py```
+
+### 2. Start the Frontend
+```bash
+cd frontend
+npm run dev```
