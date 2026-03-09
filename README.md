@@ -1,6 +1,6 @@
 # 🚀 Finance Sentinel: Full-Stack Financial Diagnostics
 
-A high-performance financial dashboard built to process raw bank statements and provide real-time spending analytics.
+A high-performance financial dashboard built to process raw bank statements and provide real-time spending analytics. 
 
 ## 🛠️ The Tech Stack
 * **Frontend:** React.js, Tailwind CSS, Lucide-React
@@ -21,10 +21,3 @@ A high-performance financial dashboard built to process raw bank statements and 
 cd backend
 source venv/bin/activate
 python main.py
-```
-
-### 2. Start the Frontend
-```bash
-cd frontend
-npm run dev
-```
