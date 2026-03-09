@@ -17,7 +17,14 @@ A high-performance financial dashboard built to process raw bank statements and 
 ## 🚀 How to Run
 
 ### 1. Start the Backend
-```bash
+\`\`\`bash
 cd backend
 source venv/bin/activate
 python main.py
+\`\`\`
+
+### 2. Start the Frontend
+\`\`\`bash
+cd frontend
+npm run dev
+\`\`\`
